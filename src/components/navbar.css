@@ -1,0 +1,167 @@
+.nav {
+    height: 7rem;
+    width: 100vw;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 30px 0;
+    transition: var(--transition);
+}
+
+.active {
+    border-bottom: 2px solid #1b1b1b;
+    padding-bottom: 13px;
+    position:relative;
+    top: 10px;
+    transition: all 500ms ease;
+}
+
+
+/* ONLY SHOWS ON MEDIUM AND SMALL SCREENS */
+
+.nav_toggle-btn {
+    display: none;
+}
+
+.nav_container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 12rem;
+    display: block;
+    font-size: 24px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+    position: relative;
+    left: none;
+}
+
+.nav_links a {
+    transition: var(--transition);
+}
+
+.nav_links a:hover {
+    color: var(--color-secondary);
+}
+
+.active-nav::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    border-bottom: 3px solid #1b1b1b;
+    padding-bottom: 13px;
+}
+
+/* MEDIA QUERIES (MEDIUM AND SMALL) */
+@media screen and (max-width: 1024px) {
+    .nav {
+        height: 7rem;
+        width: 100vw;
+        place-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        padding: 30px 0;
+        transition: var(--transition);
+    }
+
+    .nav_update {
+        /* height: 100rem; */
+        width: 100vw;
+        place-items: top;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        padding-bottom: 25rem;
+        transition: var(--transition);
+    }
+    
+    .nav_container_update {
+        display: flex;
+        /* height: 100%; */
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav_toggle-btn {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav_toggle-btn svg {
+        color: rgb(58, 58, 58);
+    }
+
+    .nav_links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        gap: 0;
+        perspective: 400px; /* MAKES THE DROP DOWN LOOK 3D */
+    }
+
+    .active-nav, .active-nav::after {
+        display: none;
+    }
+
+    .nav_links li {
+        height: 4rem;
+        width: 100%;
+        box-sizing: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+        animation: navAnimation 600ms ease forwards;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .nav_links li { /* DISPLAY TIME DELAYED */
+        animation-delay: 200ms;
+    }
+
+    @keyframes navAnimation {
+        to {
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+
+    .nav_links li a {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 5rem 1rem 3rem;
+    }
+
+    .nav_display {
+        display: flex;
+    }
+
+    .nav_hide {
+        display: none;
+    }
+
+    .active_update {
+        border-bottom: 2px solid #1b1b1b;
+        position:relative;
+        transition: all 500ms ease;
+    }
+}

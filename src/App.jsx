@@ -1,0 +1,21 @@
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+
+import Navbar from './components/Navbar'
+import HomePage from './pages/home/HomePage'
+import Footer from './components/Footer'
+
+const app = () => {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <HomePage />
+      {/* <Routes>
+        <Route path='*' element={<NotFoundPage/>}/>
+      </Routes> */}
+      <Footer />
+    </BrowserRouter>
+  )
+}
+
+export default app
