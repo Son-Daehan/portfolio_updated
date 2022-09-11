@@ -12,13 +12,13 @@ const MainHeader = () => {
         <div className='container main_header-container'>
             <ul className='main_header_social'>
                 <li>
-                    <a href="https://linkedin.com/" target="_blank" rel="noreferrer noopener"><FaLinkedinIn/></a>
+                    <a href="https://linkedin.com/in/samuel-son4/" target="_blank" rel="noreferrer noopener"><FaLinkedinIn/></a>
                 </li>
                 <li>
                     <a href="https://instagram.com/" target="_blank" rel="noreferrer noopener"><AiFillInstagram/></a>
                 </li>
                 <li>
-                    <a href="https://github.com/" target="_blank" rel="noreferrer noopener"><FaGithub/></a>
+                    <a href="https://github.com/Son-Daehan/" target="_blank" rel="noreferrer noopener"><FaGithub/></a>
                 </li>
             </ul>
             <div className='main_header_center'>

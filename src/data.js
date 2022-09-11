@@ -24,23 +24,23 @@ export const projects = [
     {
         id: 1,
         title: "Portfolio Application",
-        url: "https://github.com/Son-Daehan",
+        url: "https://github.com/Son-Daehan/portfolio_updated",
         icon: "https://res.cloudinary.com/daehan/image/upload/v1651708093/Ecommerce%20App/sale-tag-online-shopping_prxtco.jpg",
-        info: "quick description of the project"
+        info: "A portfolio web application created using React. Showcasing my ability to code in JavaScript and CSS to create a frontend application."
     },
     {
         id: 2,
         title: "E-Commerce Web Application",
-        url: "https://github.com/Son-Daehan",
+        url: "https://github.com/Son-Daehan/ecommerce-app",
         icon: "https://res.cloudinary.com/daehan/image/upload/v1651708093/Ecommerce%20App/sale-tag-online-shopping_prxtco.jpg",
-        info: "quick description of the project"
+        info: "E-Commerce web application with VueJS as the frontend framework and Ruby on Rails as the backend. Connecting backend and frontend, utilizing API to provide data through VueJS."
     },
     {
         id: 3,
         title: "Cat Blog - Mobile Application",
-        url: "https://github.com/Son-Daehan",
+        url: "https://github.com/Son-Daehan/PetMediaApp",
         icon: "https://res.cloudinary.com/daehan/image/upload/v1651708093/Ecommerce%20App/sale-tag-online-shopping_prxtco.jpg",
-        info: "quick description of the project"
+        info: "A simple blog created with React Native."
     },
 ]
 
