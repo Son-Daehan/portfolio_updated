@@ -10,9 +10,6 @@ const app = () => {
     <BrowserRouter>
       <Navbar />
       <HomePage />
-      {/* <Routes>
-        <Route path='*' element={<NotFoundPage/>}/>
-      </Routes> */}
       <Footer />
     </BrowserRouter>
   )

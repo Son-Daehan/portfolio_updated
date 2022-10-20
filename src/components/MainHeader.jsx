@@ -23,6 +23,7 @@ const MainHeader = () => {
             </ul>
             <div className='main_header_center'>
                 <h1>I AM A <em>DEVELOPER</em></h1>
+                <h2><em>IN TRAINING</em></h2>
                 <hr className='header_line'/>
                 <h2>Web Developer</h2>    
             </div>
