@@ -114,7 +114,6 @@
         left: 0;
         flex-direction: column;
         gap: 0;
-        perspective: 400px; /* MAKES THE DROP DOWN LOOK 3D */
     }
 
     .active-nav, .active-nav::after {
@@ -131,7 +130,7 @@
         transform-origin: top;
     }
 
-    .nav_links li { /* DISPLAY TIME DELAYED */
+    .nav_links li {
         animation-delay: 200ms;
     }
 

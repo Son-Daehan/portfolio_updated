@@ -221,6 +221,7 @@
 .about_wrapper {
     display: grid;
     justify-content: center;
+    align-items: center;
 }
 
 .abouts_about {
@@ -229,7 +230,6 @@
     justify-items: center;
     width: 80vw;
 }
-
 
 
 
@@ -245,6 +245,7 @@
 .skills_container {
     display: grid;
     align-items: center;
+    justify-items: center;
     margin-top: 1px;
 }
 

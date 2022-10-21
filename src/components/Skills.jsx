@@ -1,5 +1,4 @@
 import { about } from "../data"
-import SkillCard from "../UI/SkillCard"
 import * as Icons from "react-icons/fa"
 
 
@@ -25,30 +24,30 @@ const Skills = () => {
 
         <div className="skills_wrapper">
 
-          <SkillCard className="skills_skill">
+          <article className="skill_card skills_skill">
             <span className="skill_icon"><Icons.FaCrop/></span>
             <h4 className="skills_title">WEB DEVELOPMENT</h4>
             <div className="skills_content_wrapper">
               <p className="skills_content">Create a full-stack web application, connecting front-end and back-end into one integrated web application.</p>
               <p className="skills_language">Framework/Library: ReactJS</p>
             </div>
-          </SkillCard>
-          <SkillCard className="skills_skill">
+          </article>
+          <article className="skill_card skills_skill">
             <span className="skill_icon"><Icons.FaDesktop/></span>
             <h4 className="skills_title">FRONTEND</h4>
             <div className="skills_content_wrapper">
               <p className="skills_content">Designing and customizing user interaction with custom built front-end applications.</p>
               <p className="skills_language">Languages: JavaScript, CSS, HTML5</p>
             </div>
-          </SkillCard>
-          <SkillCard className="skills_skill">
+          </article>
+          <article className="skill_card skills_skill">
             <span className="skill_icon"><Icons.FaCode/></span>
             <h4 className="skills_title">BACKEND</h4>
             <div className="skills_content_wrapper">
               <p className="skills_content">Creating API applications to interact with front-end applications.</p>
               <p className="skills_language">Languages: Python and Ruby</p>
             </div>
-          </SkillCard>
+          </article>
 
 
 
@@ -67,14 +66,3 @@ const Skills = () => {
 }
 
 export default Skills
-
-// {
-//   skills.map(({id, title, icon, language, content}) => {
-//     return <SkillCard className="skills_skill" key={id}>
-//       <span className="skill_icon"></span>
-//       <h4 className="skills_title">{title}</h4>
-//       <h5 className="skills_language">Languages: {language}</h5>
-//       <small className="skills_content">{content}</small>
-//     </SkillCard>
-//   })
-// }

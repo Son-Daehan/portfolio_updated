@@ -14,14 +14,11 @@
     --primary-hue: 210;
     --gray-hue: 240;
     --color-primary: hsl(var(--primary-hue), 100%, 50%);
-    --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
     --color-secondary: #ffb116;
     --color-gray-100: hsl(var(--gray-hue), 47%, 94%);
-    --color-gray-200: hsl(var(--gray-hue), 26%, 75%);
-    --color-gray-300: hsl(var(--gray-hue), 24%, 64%);
-    --color-gray-400: hsl(var(--gray-hue), 16%, 41%);
-    --color-gray-500: hsl(var(--gray-hue), 44%, 25%);
-    --color-gray-600: hsl(var(--gray-hue), 48%, 15%);
+    --color-gray-200: hsl(var(--gray-hue), 16%, 41%);
+    --color-gray-300: hsl(var(--gray-hue), 44%, 25%);
+    --color-gray-400: hsl(var(--gray-hue), 48%, 15%);
 
     --container-width-lg: 95%;
     --container-width-md: 90%;
@@ -36,7 +33,6 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
     background-color: rgba(242,242,242, 95);
-    /* background: var(--color-gray-600); */
 }
 
 .container {
@@ -88,14 +84,6 @@ img {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
 .btn {
     color: var(--color-gray-100);
     width: fit-content;
@@ -108,7 +96,7 @@ img {
 
 .btn:hover {
     background: var(--color-secondary);
-    color: var(--color-gray-600);
+    color: var(--color-gray-400);
 }
 
 .btn.lg {
@@ -136,48 +124,15 @@ img {
 
 
 
-section {
-    margin-top: 0;
-}
-
-.section_head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.section_head span {
-    background: var(--color-gray-500);
-    padding: 0.8rem;
-    border-radius: 1rem;
-    color: var(--color-secondary);
-    font-size: 1.5rem;
-}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ABOUT SECTION */
 
 .skill_card {
-    background: var(--color-gray-500);
+    background: var(--color-gray-300);
     border: 2px solid transparent;
     text-align: center;
     padding: 3rem 2rem;
@@ -188,7 +143,7 @@ section {
 
 .skill_card:hover {
     background: transparent;
-    border-color: var(--color-gray-400);
+    border-color: var(--color-gray-200);
     cursor: default;
 }
 
@@ -197,7 +152,7 @@ section {
     width: 3rem;
     height: 3rem;
     background: white;
-    color: var(--color-gray-500);
+    color: var(--color-gray-300);
     font-size: 1.5rem;
     padding: 0.8rem;
     margin-bottom: 1.5rem;
@@ -248,31 +203,31 @@ section {
 
 
   
-  .service-wrap:hover .heading {
-    top: -30px;
-  }
-  
-  .service-wrap .description {
-    font-weight: 300;
-    font-size: 11pt;
-    letter-spacing: 1pt;
-    line-height: 18pt;
-    width: 80%;
-    margin: 0 auto;
-    opacity: 0;
-    -webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-  }
-  
-  .service-wrap:hover .description {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
+.service-wrap:hover .heading {
+top: -30px;
+}
+
+.service-wrap .description {
+font-weight: 300;
+font-size: 11pt;
+letter-spacing: 1pt;
+line-height: 18pt;
+width: 80%;
+margin: 0 auto;
+opacity: 0;
+-webkit-transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+-webkit-transform: scale(0);
+-ms-transform: scale(0);
+transform: scale(0);
+}
+
+.service-wrap:hover .description {
+opacity: 1;
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+}
 
 
 
@@ -290,7 +245,7 @@ section {
 
 
 
-
+/* PROJECT SECTION */
 .project_card {
     background: white;
     border: 2px solid transparent;
@@ -321,7 +276,7 @@ section {
 
 .project_card:hover span {
     background: var(--color-secondary);
-    color: var(--color-gray-600);
+    color: var(--color-gray-400);
 }
 
 .project_card small {
@@ -341,12 +296,12 @@ section {
 
 
 
-
+/* HEADER SECTION */
 .header {
     margin-top: 5rem;
     height: 20rem;
     overflow: hidden;
-    border-bottom: 2px solid var(--color-gray-400);
+    border-bottom: 2px solid var(--color-gray-200);
 }
 
 .header_container {
