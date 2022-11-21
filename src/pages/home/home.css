@@ -96,38 +96,6 @@
   .main_header_social li a:active {
     color: #1b1b1b;
   }
-/* 
-.main_header-left {
-    margin-top: -3rem;
-}
-
-.main_header-left h4 {
-    margin-bottom: 1rem;
-    color: var(--color-secondary);
-    font-size: 400;
-}
-
-.main_header-left p {
-    margin: 1rem 0 3.5rem;
-    font-size: 1.1rem;
-}
-
-.main_header-right {
-    display: grid;
-    place-items: center;
-    position: relative;
-}
-
-.main_header-circle {
-    width: 25rem;
-    height: 25rem;
-    background: linear-gradient(75deg, var(--color-secondary), transparent);
-    border-radius: 50%;
-    position: absolute;
-    transition: var(--transition);
-} */
-
-
 
 /* PROJECTS */
 .projects {
@@ -150,9 +118,13 @@
 }
 
 .projects_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(3, 1fr); */
     margin-top: 2rem;
+    box-shadow: 1px 3px 8px var(--color-gray-200);
 }
 
 .projects_project img {
@@ -249,9 +221,6 @@
     margin-top: 1px;
 }
 
-/* .skills_right > p{
-    margin: 1.5rem 0 5rem;
-} */
 
 .skills_wrapper {
     display: grid;

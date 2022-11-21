@@ -6,6 +6,7 @@ import {links} from '../data'
 import {GoThreeBars} from 'react-icons/go'
 import {MdOutlineClose} from 'react-icons/md'
 import Scrollspy from 'react-scrollspy'
+import resume from '../data/resume.pdf'
 
 const Navbar = () => {
     const [navDisplay, setNavDisplay] = useState(false);
@@ -34,17 +35,29 @@ const Navbar = () => {
             </Link>
 
             <Scrollspy className={`nav_links ${navDisplay ? 'nav_display' : 'nav_hide'}`} items={['home', 'about', 'projects', 'contact']} currentClassName={`active ${navDisplay ? 'active_update' : ''}`}>
-                {
-                    links.map(({name, path}, index) => {
-                        return (
-                            <li key={index}>
-                                <Link to={path} className={({isActive}) => isActive ? 'active-nav' : ''} onClick={() => setNavDisplay(prev => !prev)}>
-                                    {name} 
-                                </Link>
-                            </li>
-                        )
-                    })
-                }
+                <li>
+                    <Link to='#home' className={({isActive}) => isActive ? 'active-nav' : ''} onClick={() => setNavDisplay(prev => !prev)}>
+                        HOME
+                    </Link>
+                </li>
+                <li>
+                    <Link to='#about' className={({isActive}) => isActive ? 'active-nav' : ''} onClick={() => setNavDisplay(prev => !prev)}>
+                        ABOUT
+                    </Link>
+                </li>
+                <li>
+                    <Link to='#projects' className={({isActive}) => isActive ? 'active-nav' : ''} onClick={() => setNavDisplay(prev => !prev)}>
+                        PORTFOLIO 
+                    </Link>
+                </li>
+                <li>
+                    <Link to='#contact' className={({isActive}) => isActive ? 'active-nav' : ''} onClick={() => setNavDisplay(prev => !prev)}>
+                        CONTACT
+                    </Link>
+                </li>
+                <li>
+                    <a href={resume} target = '_blank'>RESUME</a>
+                </li>
             </Scrollspy>
 
             <button className="nav_toggle-btn" onClick={() => setNavDisplay(prev => !prev)}>

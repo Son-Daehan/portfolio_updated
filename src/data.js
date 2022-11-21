@@ -2,19 +2,19 @@
 
 export const links = [
     {
-        name: "H O M E",
+        name: "HOME",
         path: '#home'
     },
     {
-        name: "A B O U T",
+        name: "ABOUT",
         path: '#about'
     },
     {
-        name: "P O R T F O L I O",
+        name: "PORTFOLIO",
         path: '#projects'
     },
     {
-        name: "C O N T A C T",
+        name: "CONTACT",
         path: '#contact'
     },
 

@@ -12,10 +12,10 @@ const Skills = () => {
             about.map(({id, title, content}) => {
               return (
                 <div key={id} className="abouts_about">
-                  <h4>{title}</h4>
+                  <h4>ABOUT ME</h4>
                   <hr className="header_line"/>
                   <h2>TRANSITIONING PHASE TO WEB DEVELOPMENT</h2>
-                  <p>{content}</p>
+                  <p>Had the honor of serving in the United States Air Force. I am currently enrolled in Code Platoon where I am learning and transitioning into a Software Engineer.</p>
                 </div>
               )
             })

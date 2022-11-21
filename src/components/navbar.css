@@ -164,3 +164,8 @@
         transition: all 500ms ease;
     }
 }
+
+
+link {
+    line-spacing: 20pt;
+}

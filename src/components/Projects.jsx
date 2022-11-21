@@ -1,5 +1,6 @@
 import {projects} from '../data'
 import {AiFillCaretRight} from 'react-icons/ai'
+import portfolio_img from '../images/portfolio_img.png'
 
 
 const Projects = () => {
@@ -9,22 +10,20 @@ const Projects = () => {
             <div className='projects_header_wrapper'>
                 <h4>PROJECTS</h4>
                 <hr className='header_line'/>
-                <h2>COMPLETED AND ONGOING PROJECTS</h2>
+                <h2>COMPLETED PROJECTS</h2>
             </div>
         
             <div className="projects_wrapper">
-                {
-                    projects.map(({id, title, url, icon, info}) => {
-                        return (
-                            <article className="project_card projects_project" key={id}>
-                                <img className='project_icon' src={icon} alt="projects"/>
-                                <h4>{title}</h4>
-                                <p>{info}</p>
-                                <a href={url} className="btn sm">Learn More <AiFillCaretRight/></a>
-                            </article>
-                        )
-                    })
-                }
+
+                <article className="project_card projects_project">
+                    <img className='project_icon' src={portfolio_img} alt="projects"/>
+                    <h4>Portfolio Application</h4>
+                    <p>A portfolio application created using React, to learn and showcase my capabilities in JavaScript and CSS.</p>
+                    <a href='https://github.com/Son-Daehan/portfolio_updated' className="btn sm">Learn More <AiFillCaretRight/></a>
+                </article>
+
+ 
+
             </div>
         </div>
     </div>
