@@ -1,0 +1,21 @@
+/* PROJECTS */
+.projects {
+    /* width: 65vw; */
+    display: grid;
+    justify-content: center;
+}
+
+.projects_container {
+    display: grid;
+    width: 65vw;
+    /* justify-items: center; */
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.projects_header_wrapper {
+    display: grid;
+    margin-bottom: 2rem;
+    /* margin-left: 12rem; */
+}
+
