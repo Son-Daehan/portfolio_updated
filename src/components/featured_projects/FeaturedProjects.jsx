@@ -1,6 +1,7 @@
 import React from "react";
 import portfolio_img from "../../images/portfolio_img.png";
 import chat_application_img from "../../images/chat_application_img.png";
+import restaurant_app_img from "../../images/restaurant_app_img.png";
 import "./FeaturedProjects.css";
 import { AiFillGithub } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
@@ -95,6 +96,52 @@ const FeaturedProjects = () => {
 							</li>
 						</ul>
 					</div>
+				</div>
+			</div>
+			<div className="featured_project_wrapper">
+				<div className="featured_project_left_wrapper">
+					<h3 className="project-title">Restaurant Social Media App</h3>
+					<div>
+						<p className="project-description-container">
+							A social media application with real-time chat feature using
+							Websockets. This application utilizes geolocation API and Yelp's
+							API to find restaurants near the user. Users are also able to
+							post, comment, and likes reviews/comments which is saved in
+							postgresql.
+						</p>
+					</div>
+					<div className="project-additional-container">
+						<div>
+							<ul className="framework-library-used">
+								<li>Python</li>
+								<li>Django</li>
+								<li>Redis</li>
+								<li>JavaScript</li>
+							</ul>
+							<ul className="framework-library-used">
+								<li>ReactJS</li>
+								<li>Redux</li>
+								<li>HTML</li>
+								<li>CSS</li>
+							</ul>
+						</div>
+						<ul className="project-url">
+							<li>
+								<a href="https://github.com/Son-Daehan/travel_app">
+									<AiFillGithub className="project-icon" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div className="featured_project_right_wrapper">
+					<a href="https://www.github.com">
+						<img
+							className="featured_project_img"
+							src={restaurant_app_img}
+							alt="portfolio-img"
+						/>
+					</a>
 				</div>
 			</div>
 		</div>
