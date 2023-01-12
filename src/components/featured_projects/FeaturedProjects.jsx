@@ -91,9 +91,9 @@ const FeaturedProjects = () => {
 									<AiFillGithub className="project-icon" />
 								</a>
 							</li>
-							<li>
+							{/* <li>
 								<CgWebsite className="project-icon" />
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>
