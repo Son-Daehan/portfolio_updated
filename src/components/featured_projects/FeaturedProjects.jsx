@@ -67,9 +67,9 @@ const FeaturedProjects = () => {
 						<p className="project-description-container-second">
 							A simple real-time chat application that uses websockets to enable
 							two-way communication between the client and server. This project
-							only contains a small scope of the capabalities of today's chat
-							application. For learning purposes, it will be consistently
-							updated!
+							only contains a small scope of what modern real-time chat
+							applications can do. For learning purposes, it will be
+							consistently updated!
 						</p>
 					</div>
 					<div className="project-additional-container-second">
@@ -91,9 +91,11 @@ const FeaturedProjects = () => {
 									<AiFillGithub className="project-icon" />
 								</a>
 							</li>
-							{/* <li>
-								<CgWebsite className="project-icon" />
-							</li> */}
+							<li>
+								<a href="http://54.88.231.119/">
+									<CgWebsite className="project-icon" />
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
