@@ -42,9 +42,6 @@ const MainHeader = () => {
 					<h1>
 						I AM A <em>DEVELOPER</em>
 					</h1>
-					<h2>
-						<em>IN TRAINING</em>
-					</h2>
 					<hr className="header_line" />
 					<h2>Software Engineer</h2>
 				</div>

@@ -92,7 +92,7 @@ const FeaturedProjects = () => {
 								</a>
 							</li>
 							<li>
-								<a href="http://54.88.231.119/">
+								<a href="http://54.88.231.119/login/">
 									<CgWebsite className="project-icon" />
 								</a>
 							</li>
