@@ -86,6 +86,10 @@
         display: none;
     }
 
+    .email_container {
+        display: none;
+    }
+
     /* PROJECTS */
     .projects {
         width: auto;

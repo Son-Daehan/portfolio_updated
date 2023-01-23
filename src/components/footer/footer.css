@@ -8,7 +8,8 @@ footer {
 }
 
 .footer_container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     /* gap: 4rem; */
     align-items: center;
     justify-items: center;
@@ -18,7 +19,8 @@ footer {
 }
 
 .footer_contact {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     gap: 8rem;
     justify-content: center;
@@ -50,7 +52,7 @@ footer {
 
 .footer_socials {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-items: center;
     align-items: center;

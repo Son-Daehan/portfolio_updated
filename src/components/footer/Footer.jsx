@@ -36,13 +36,13 @@ const Footer = () => {
 					>
 						LINKEDIN
 					</a>
-					<a
+					{/* <a
 						href="https://instagram.com/"
 						target="_blank"
 						rel="noreferrer noopener"
 					>
 						INSTAGRAM
-					</a>
+					</a> */}
 					<a
 						href="https://github.com/Son-Daehan"
 						target="_blank"

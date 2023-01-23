@@ -19,7 +19,7 @@ const MainHeader = () => {
 							<FaLinkedinIn />
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a
 							href="https://instagram.com/"
 							target="_blank"
@@ -27,7 +27,7 @@ const MainHeader = () => {
 						>
 							<AiFillInstagram />
 						</a>
-					</li>
+					</li> */}
 					<li>
 						<a
 							href="https://github.com/Son-Daehan/"

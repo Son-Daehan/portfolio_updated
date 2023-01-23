@@ -1,0 +1,43 @@
+[
+	{
+		"id": 1,
+		"title": "Personal Portfolio",
+		"description": "A minimilistic designed portfolio website using ReactJS. This was a great opportunity to learn different features of ReactJS and CSS styling components! This website features my personal projects and resume.",
+		"techStack": ["JavaScript", "HTML", "CSS", "React"],
+		"githubURL": "https://github.com/Son-Daehan/portfolio_updated",
+		"webURL": "https://www.samuelson.dev/"
+	},
+	{
+		"id": 2,
+		"title": "Real-Time Chat Application",
+		"description": "A simple real-time chat application that uses websockets to enable two-way communication between the client and server. This project only contains a small scope of what modern real-time chat applications can do. For learning purposes, it will be consistently updated!",
+		"techStack": [
+			"JavaScript",
+			"React",
+			"Python",
+			"Django",
+			"Postgres",
+			"Reduxs",
+			"Redis"
+		],
+		"githubURL": "https://github.com/Son-Daehan/chat_app",
+		"webURL": "http://44.212.9.213/login/"
+	},
+	{
+		"id": 3,
+		"title": "Restaurant Social Media App",
+		"description": "A social media application with real-time chat feature using Websockets. This application utilizes geolocation API and Yelp's API to find restaurants near the user. Users are also able to post, comment, and likes reviews/comments which is saved in postgresql.",
+		"techStack": [
+			"Python",
+			"Django",
+			"Redis",
+			"JavaScript",
+			"React",
+			"Redux",
+			"HTML",
+			"CSS"
+		],
+		"githubURL": "https://www.github.com",
+		"webURL": ""
+	}
+]
