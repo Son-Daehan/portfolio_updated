@@ -59,7 +59,7 @@ const FeaturedProjects2 = () => {
 				</div>
 				<div className="featured-project-right-wrapper">
 					<div className="featured-project-img-container">
-						<a href="https://www.github.com">
+						<a href="https://github.com/Son-Daehan/portfolio_updated">
 							<img
 								className="featured_project_img"
 								src={portfolio_img}
@@ -72,7 +72,7 @@ const FeaturedProjects2 = () => {
 			<div className="featured-project-wrapper">
 				<div className="featured-project-right-wrapper">
 					<div className="featured-project-img-container">
-						<a href="https://www.github.com">
+						<a href="https://github.com/Son-Daehan/chat_app">
 							<img
 								className="featured_project_img"
 								src={chat_application_img}
@@ -167,7 +167,7 @@ const FeaturedProjects2 = () => {
 				</div>
 				<div className="featured-project-right-wrapper">
 					<div className="featured-project-img-container">
-						<a href="https://www.github.com">
+						<a href="https://github.com/Son-Daehan/travel_app">
 							<img
 								className="featured_project_img"
 								src={restaurant_app_img}
