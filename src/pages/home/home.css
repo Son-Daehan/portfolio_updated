@@ -1,154 +1,19 @@
+.container {
+    background-color: black;
+}
+    .body_container {
+    /* margin-inline: 30rem; */
+}
+
 /* MEDIA QUERIES (MEDIUM SCREENS) */
 @media screen and (max-width: 1024px) {
-    /* MAIN HEADER */
-    .main_header {
-        height: fit-content;
-        padding: 12rem 0;
-    }
-
-    .main_header-container {
-        gap: 0;
-    }
-
-    .main_header-circle {
-        width: 16rem;
-        height: 16rem;
-    }
-
-    /* PROJECTS */
-    .projects_wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    /* SKILLS */
-    .skills_container {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        gap: 4rem;
-    }
-
-    .skills_wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .skills_image {
-        display: none;
-    }
-
-
-    /* FOOTER */
-    .footer_container {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+    .body_container {
+        /* margin-left: 20rem, */
     }
 }
 
 
 /* MEDIA QUERIES (SMALL SCREENS) */
 @media screen and (max-width: 600px) {
-    /* MAIN HEADER */
-    .main_header {
-        margin-top: 0;
-        padding: 12rem 0 0;
-        height: 100vh;
-    }
-
-    .main_header-image, .main_header-circle {
-        display: none;
-    }
-
-    .main_header-container {
-        grid-template-columns: 1fr;
-    }
-
-    .main_header_center {
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-    }
-
-    .main_header_center h1 {
-        font-size: 12pt;
-        letter-spacing: 10pt;
-    }
-
-    .main_header_center h2 {
-        font-size: 10pt;
-        letter-spacing: 1pt;
-    }
-
-    .main_header_social {
-        display: none;
-    }
-
-    .email_container {
-        display: none;
-    }
-
-    /* PROJECTS */
-    .projects {
-        width: auto;
-        height: auto;
-    }
-    .projects_wrapper {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-top: 3rem;
-    }
-
-    .projects_project {
-        width: 84%;
-        margin: 0 auto;
-    }
-
-    .project_card.projects_project {
-        width: 84%;
-        margin-inline: auto;
-    }
-
-    /* SKILLS */
-    .skills {
-        width: auto;
-        height: auto;
-    }
-
-    .skills_wrapper {
-        display: block;
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .skill_card.skills_skill {
-        width: 84%;
-        margin-inline: auto;
-    }
-
-    /* FOOTER */
-    .footer_container {
-        grid-template-columns: 1fr;
-        gap: 1;
-    }
-
-    .footer_contact {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .footer_socials {
-        grid-template-columns: 1fr;
-        gap: 2;
-    }
-
-    .footer_container article {
-        align-items: center;
-    }
-
-    .footer_container article p {
-        text-align: center;
-    }
+    
 }

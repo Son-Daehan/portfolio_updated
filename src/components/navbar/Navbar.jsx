@@ -8,101 +8,87 @@ import Scrollspy from "react-scrollspy";
 import resume from "../../data/resume.pdf";
 
 const Navbar = () => {
-	const [navDisplay, setNavDisplay] = useState(false);
+  const [navDisplay, setNavDisplay] = useState(false);
 
-	window.onscroll = function () {
-		scrollFunction();
-	};
+  const navLinks = ["home", "about", "projects", "contact"];
 
-	function scrollFunction() {
-		if (
-			document.body.scrollTop > 40 ||
-			document.documentElement.scrollTop > 40
-		) {
-			document.querySelector("nav").style.height = "3rem";
-			document.querySelector("nav").style.background = "white";
-			document.querySelector("nav").style.boxShadow =
-				"1px 5px 12px var(--color-gray-200)";
-		} else {
-			document.querySelector("nav").style.height = "7rem";
-			document.querySelector("nav").style.background = "rgba(242,242,242, 95)";
-			document.querySelector("nav").style.boxShadow = "none";
-		}
-	}
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-	return (
-		<nav className={`nav ${navDisplay ? "nav_update" : ""}`}>
-			<div
-				className={`container nav_container ${
-					navDisplay ? "nav_container_update" : ""
-				}`}
-			>
-				<Link
-					to="/"
-					className="logo"
-					style={{ color: "var(--color-gray-500)" }}
-					onClick={() => setNavDisplay(false)}
-				>
-					SAMUEL SON
-				</Link>
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 40 ||
+      document.documentElement.scrollTop > 40
+    ) {
+      document.querySelector("nav").style.height = "3rem";
+      document.querySelector("nav").style.background = "black";
+      document.querySelector("nav").style.boxShadow =
+        "1px 5px 12px var(--color-gray-200)";
+    } else {
+      document.querySelector("nav").style.height = "7rem";
+      document.querySelector("nav").style.background = "black";
+      document.querySelector("nav").style.boxShadow = "none";
+    }
+  }
 
-				<Scrollspy
-					className={`nav_links ${navDisplay ? "nav_display" : "nav_hide"}`}
-					items={["home", "about", "projects", "contact"]}
-					currentClassName={`active ${navDisplay ? "active_update" : ""}`}
-				>
-					<li>
-						<Link
-							to="#home"
-							className={({ isActive }) => (isActive ? "active-nav" : "")}
-							onClick={() => setNavDisplay((prev) => !prev)}
-						>
-							HOME
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="#about"
-							className={({ isActive }) => (isActive ? "active-nav" : "")}
-							onClick={() => setNavDisplay((prev) => !prev)}
-						>
-							ABOUT
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="#projects"
-							className={({ isActive }) => (isActive ? "active-nav" : "")}
-							onClick={() => setNavDisplay((prev) => !prev)}
-						>
-							PORTFOLIO
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="#contact"
-							className={({ isActive }) => (isActive ? "active-nav" : "")}
-							onClick={() => setNavDisplay((prev) => !prev)}
-						>
-							CONTACT
-						</Link>
-					</li>
-					<li>
-						<a href={resume} target="_blank" rel="noopener noreferrer">
-							RESUME
-						</a>
-					</li>
-				</Scrollspy>
+  return (
+    <nav className={`nav ${navDisplay ? "nav_update" : ""}`}>
+      <div
+        className={`container nav_container ${
+          navDisplay ? "nav_container_update" : ""
+        }`}
+      >
+        <div className="logo_container">
+          <Link
+            to="/"
+            className="logo"
+            style={{ color: "var(--color-gray-500)" }}
+            onClick={() => setNavDisplay(false)}
+          >
+            SAMUEL SON
+          </Link>
+        </div>
 
-				<button
-					className="nav_toggle-btn"
-					onClick={() => setNavDisplay((prev) => !prev)}
-				>
-					{navDisplay ? <MdOutlineClose /> : <GoThreeBars />}
-				</button>
-			</div>
-		</nav>
-	);
+        <Scrollspy
+          className={`nav_links ${navDisplay ? "nav_display" : "nav_hide"}`}
+          items={["home", "about", "projects", "contact"]}
+          currentClassName={`active ${navDisplay ? "active_update" : ""}`}
+        >
+          {navLinks.map((navLink, index) => (
+            <li key={index}>
+              <Link
+                to={`#${navLink}`}
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setNavDisplay((prev) => !prev);
+                  document
+                    .getElementById(navLink)
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                {navLink.toUpperCase()}
+              </Link>
+            </li>
+          ))}
+
+          <li>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              RESUME
+            </a>
+          </li>
+        </Scrollspy>
+
+        <button
+          className="nav_toggle-btn"
+          onClick={() => setNavDisplay((prev) => !prev)}
+        >
+          {navDisplay ? <MdOutlineClose /> : <GoThreeBars />}
+        </button>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;

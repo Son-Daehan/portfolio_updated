@@ -9,12 +9,13 @@
 .about_wrapper {
     display: grid;
     justify-items: left;
-    width: 75vw;
+    width: 60vw;
 }
 
 .about {
-    display: grid;
-    background-color: white;
+    display: flex;
+    background-color: black;
+    justify-content: center;
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
 }

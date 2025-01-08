@@ -5,14 +5,16 @@ import "./home.css";
 import About from "../../components/about/About";
 
 const HomePage = () => {
-	return (
-		<>
-			<MainHeader />
-			<About />
-			<Projects />
-			<hr className="footer_line" />
-		</>
-	);
+  return (
+    <div className="container">
+      <MainHeader />
+      <div className="body_container">
+        <About />
+        <Projects />
+        <hr className="footer_line" />
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;
