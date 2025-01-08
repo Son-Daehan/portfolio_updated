@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./navbar.css";
 import { HashLink as Link } from "react-router-hash-link";
-import { GoThreeBars } from "react-icons/go";
+import { FaBars } from "react-icons/fa6";
 import { MdOutlineClose } from "react-icons/md";
 import Scrollspy from "react-scrollspy";
 import resume from "../../data/resume.pdf";
@@ -84,7 +84,7 @@ const Navbar = () => {
           className="nav_toggle-btn"
           onClick={() => setNavDisplay((prev) => !prev)}
         >
-          {navDisplay ? <MdOutlineClose /> : <GoThreeBars />}
+          {navDisplay ? <MdOutlineClose /> : <FaBars />}
         </button>
       </div>
     </nav>
